@@ -1,5 +1,5 @@
 context:
-  version: "0.22.0"
+  version: "0.26.1"
 
 package:
   name: ryl
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/owenlamont/ryl/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 608e9c35135bfcf9c19f6f7c0792c6a20ae3ebfd1e3c9bb6e48c67090b117d77
+  sha256: 062cc0342d33bcce4a105bf22c96d44df862306d03d926a83c2922d2b8329834
 
 build:
   number: 0
@@ -60,10 +60,16 @@ about:
     replacement for yamllint. It reads yamllint-compatible YAML config and
     adds a native TOML config, lints YAML embedded in Markdown, applies safe
     fixes, and emits standard, GitHub, JUnit, and GitLab output formats.
-  license: MIT
+  license: MIT OR Apache-2.0
   license_file:
     - LICENSE
+    - LICENSE-APACHE
     - THIRDPARTY.yml
+    - crates/ryl-yaml-parser/LICENSE
+    - crates/ryl-yaml-parser/.licenses/ChenYuheng-Apache
+    - crates/ryl-yaml-parser/.licenses/ChenYuheng-MIT
+    - crates/ryl-yaml-parser/.licenses/Ethiraric-Apache
+    - crates/ryl-yaml-parser/.licenses/Ethiraric-MIT
   documentation: https://ryl-docs.pages.dev/
   repository: https://github.com/owenlamont/ryl
 
