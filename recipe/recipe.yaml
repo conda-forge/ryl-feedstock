@@ -1,5 +1,5 @@
 context:
-  version: "0.29.0"
+  version: "0.30.0"
 
 package:
   name: ryl
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/owenlamont/ryl/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 125a621004b0eef0963fbb4261a335de3f4afb82fb789297efbd0ff9de8249ab
+  sha256: 6c005e39d0952dec7b937a0e9efb27a381979621a880ae6dee29777a641a94af
 
 build:
   number: 0
